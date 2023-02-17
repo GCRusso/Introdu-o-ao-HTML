@@ -19,21 +19,37 @@
             text-decoration: none;
             margin-right: 5px;
         }
-        * {
-         border: 2px dotted green;
-     }
-     p {
-         color: yellow;
-       font-weight: bold;
-     }
+/* esta borda engloba apenas os paragrafos */
+        p {
+            border: 2px dotted green; 
+        }
+
+        p {
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+        }
+
+        #segundo {
+            color: rgb(217, 255, 0);
+        }
+
+        .subtitulo {
+            width: 200px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border: 1px blue;
+        }
+        .borda-inferior{
+            border: 5px dotted black;
+        }
     </style>
-    
+
 </head>
 
 <body>
     <div id="cabecalho">
-        <img src="C:\Users\23655858841\Desktop\Introdu-o-ao-HTML\logotipo-gamerlogo.png"Sua logo aqui">
-        
+        <img src="C:\Users\23655858841\Desktop\Introdu-o-ao-HTML\logotipo-gamerlogo.png" Sua logo aqui">
+
         <div id="menu">
             <a href="inicio.html">inicio</a>
             <a href="jogadores.html">Jogadores</a>
@@ -42,22 +58,26 @@
         </div>
 
 
-    
+
 
     </div>
 
-    <h1>HTML básico - Códigos HTML</h1>
+    <h1 class="borda-inferior">HTML básico - Códigos HTML</h1>
+
     <p>Aprenda os princípios básicos para confecção de um site em HTML <br>para que você possa fazer seu primeiro site.
     </p>
 
-    <h2>MOTIVAÇÃO</h2>
-    <P>HTML (abreviação de Hypertext Markup Language) é uma linguagem de marcação utilizada na estruturação de páginas
+    <h2 class="subtitulo">MOTIVAÇÃO</h2>
+
+    <P id="segundo">HTML (abreviação de Hypertext Markup Language) é uma linguagem de marcação utilizada na estruturação
+        de páginas
         WEB.<br>Sua sintaxe é bastante simples, e assim como a XML é baseada em tags, que representam os diversos
         elementos de uma página, como imagens e links. </P>
-
     <p>Ao acessar uma página web através de um navegador,ele é capaz de interpretar o código HTML e renderizá-lo de
         forma compreensível para o usuário final,<br> exibindo textos, botões e etc. com as configurações definidas por
         meio das diversas tags que essa linguagem dispõe.</p>
+
+    <h2 class="subtitulo">Gabriel Russo</h2>
 
 
 </body>
